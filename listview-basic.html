@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1" data-title="첫번째 페이지">
+		<div data-role="header" data-theme="a" style="background: white; color:blue; shadow: blue 0px 0px">
+			<a href="#page2" class="ui-btn-right">영화</a>
+			<h1>한동연</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<img src="search.png" height="150" width="200">
+				<li data-role="listdivider">메뉴 제목</li>
+				<li><a href="#page2" data-rel="dialog"><img src="movie.png"> 영화</a></li>
+				<li><a href="#page3"><img src="tabletennis.jpg">좋아하는 스포츠</a></li>
+				<li><a href="#page4"><img src="game.png">좋아하는 게임</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<a href="#page1">영화</a>
+			<a href="#page2">스포츠</a>
+			<a href="#page3">게임</a>					
+		</div>
+	</div>
+	
+	<div data-role="page" id="page2" data-title="두번째 페이지">
+		<div data-role="header" data-add-back-btn="true">
+			<h1>영화</h1>
+			<a href="#page3" data-icon="home" class="ui-btn-right">스포츠</a>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li data-role="list-divider">비교적 예전 영화
+					 <p class="ui-li-aside">2013년 이전 개봉 영화</p>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/watch?v=ULbbLQRHuDU">
+						<img src="ghost.jpg">
+						<h3>헬로우 고스트</h3>
+						<p>등급: 12세관람가</p>
+						<p>상영시간: 111분</p>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/watch?v=y8oWogbkvOI">
+						<img src="in.png">
+						<h3>인시디어스</h3>
+						<p>등급: 15세관람가</p>
+						<p>상영시간: 102분</p>
+					</a>
+				</li>
+				<li data-role="list-divider">비교적 최근 영화
+					 <p class="ui-li-aside">2013년 이후 개봉 영화</p>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/watch?v=8hfxHsJMbUo">
+						<img src="castle.jpg">
+						<h3>안시성</h3>
+						<p>등급: 12세관람가</p>
+						<p>상영시간: 135분</p>				
+						<p class="ui-li-aside">역사</p>
+						<span class="ui-li-count">HOT</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/watch?v=o2jGUbdmPSE">
+						<img src="job.jpg">
+						<h3>극한직업</h3>
+						<p>등급: 15세관람가</p>
+						<p>상영시간: 111분</p>				
+						<p class="ui-li-aside">코미디</p>
+						<span class="ui-li-count">HOT</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" class="ui-bar" data-position="fixed">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#page1">영화</a>
+				<a href="#page2">스포츠</a>
+				<a href="#page3">게임</a>				
+			</div>	
+		</div>
+	</div>
+	
+	<div data-role="page" id="page3" data-title="세번째 페이지">
+		<div data-role="header" data-add-back-btn="true">
+			<h1>스포츠</h1>
+			<a href="#page4" data-icon="home" class="ui-btn-right">게임</a>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li data-role="list-divider">탁구
+					 <p class="ui-li-aside">2019 ~ 현재</p>
+				</li>	
+				<li>
+					<div data-role="collapsible">
+					<h3>탁구 소개</h3>
+					<p>탁구는 일정한 규격의 탁구대에서 작고 가벼운 공을 라켓으로 주고받으며</p>
+					<p>경쟁하는 경기로 대중적인 라켓 스포츠이다.</p>
+					</div>							
+				</li>
+				<li>		
+						<div data-role="collapsible">
+					<h3>탁구 영상</h3>
+					<p>탁구는 일정한 규격의 탁구대에서 작고 가벼운 공을 라켓으로 주고받으며</p>
+					</div>
+				</li>				
+			</ul>		
+		</div>
+		<div data-role="footer" class="ui-bar" data-position="fixed">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#page1">영화</a>
+				<a href="#page2">스포츠</a>
+				<a href="#page3">게임</a>						
+			</div>
+		</div>
+		
+		<div data-role="page" id="page4" data-title="네번째 페이지">
+		<div data-role="header" data-add-back-btn="true">
+			<h1>게임</h1>
+			<a href="#page1" data-icon="home" class="ui-btn-right">홈</a>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li data-role="list-divider">탁구
+					 <p class="ui-li-aside">2009</p>
+				</li>	
+				<li>
+					<a href="#">
+						<img class="ui-li-icon" src="listicon2.png">
+						<h3>6PM</h3>		
+						<span class="ui-li-aside">생일파티</span>
+						<span class="ui-li-count">10</span>
+					</a>					
+				</li>
+				<li>
+					<a href="#">
+						<img class="ui-li-icon" src="listicon2.png">
+						<h3>6PM</h3>		
+						<span class="ui-li-count">10</span>
+					</a>					
+				</li>				
+			</ul>		
+		</div>
+		<div data-role="footer" class="ui-bar" data-position="fixed">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#page1">영화</a>
+				<a href="#page2">스포츠</a>
+				<a href="#page3">게임</a>						
+			</div>
+		</div>
+	</div>			
+</body>
+</html>
