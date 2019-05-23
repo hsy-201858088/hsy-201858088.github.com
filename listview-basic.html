@@ -17,16 +17,20 @@
 		<div data-role="content">
 			<ul data-role="listview" data-inset="true">
 				<img src="search.png" height="150" width="200">
-				<li data-role="listdivider">메뉴 제목</li>
-				<li><a href="#page2" data-rel="dialog"><img src="movie.png"> 영화</a></li>
+				<li data-role="listdivider">메뉴 목록</li>
+				<li><a href="#page2" data-rel="dialog"><img src="movie.png">좋아하는 영화</a></li>
 				<li><a href="#page3"><img src="tabletennis.jpg">좋아하는 스포츠</a></li>
-				<li><a href="#page4"><img src="game.png">좋아하는 게임(미완성)</a></li>
+				<li><a href="#page4"><img src="game.png">좋아하는 게임</a></li>
+				<li><a href="#page4"><img src="music.jpg">좋아하는 노래</a></li>
 			</ul>
 		</div>
 		<div data-role="footer" data-position="fixed">
-			<a href="#page1">영화</a>
-			<a href="#page2">스포츠</a>
-			<a href="#page3">게임</a>					
+			<a href="#page1">메인</a>
+			<a href="#page2">영화</a>
+			<a href="#page3">스포츠</a>
+			<a href="#page4">게임</a>
+			<a href="#page5">노래</a>
+			<a href="MyIntroduce2.html">만든이 이력서</a>				
 		</div>
 	</div>
 	
@@ -83,9 +87,12 @@
 		</div>
 		<div data-role="footer" class="ui-bar" data-position="fixed">
 			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#page1">영화</a>
-				<a href="#page2">스포츠</a>
-				<a href="#page3">게임</a>				
+			<a href="#page1">메인</a>
+			<a href="#page2">영화</a>
+			<a href="#page3">스포츠</a>
+			<a href="#page4">게임</a>
+			<a href="#page5">노래</a>
+			<a href="MyIntroduce2.html">만든이 이력서</a>				
 			</div>	
 		</div>
 	</div>
@@ -105,58 +112,102 @@
 					<h3>탁구 소개</h3>
 					<p>탁구는 일정한 규격의 탁구대에서 작고 가벼운 공을 라켓으로 주고받으며</p>
 					<p>경쟁하는 경기로 대중적인 라켓 스포츠이다.</p>
-					</div>							
-				</li>
-				<li>		
-						<div data-role="collapsible">
-					<h3>탁구 영상</h3>
-					<a href="https://www.youtube.com/watch?v=YNP0qZl-1os">
 					</div>
-				</li>				
+					
+					<div data-role="collapsible">
+					<h3>탁구 영상</h3>
+					<a href="https://www.youtube.com/watch?v=YNP0qZl-1os">탁구 영상</a>
+					</div>							
+				</li>			
 			</ul>		
 		</div>
 		<div data-role="footer" class="ui-bar" data-position="fixed">
 			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#page1">영화</a>
-				<a href="#page2">스포츠</a>
-				<a href="#page3">게임</a>						
+			<a href="#page1">메인</a>
+			<a href="#page2">영화</a>
+			<a href="#page3">스포츠</a>
+			<a href="#page4">게임</a>
+			<a href="#page5">노래</a>
+			<a href="MyIntroduce2.html">만든이 이력서</a>						
+			</div>
+		</div>
+	</div>
+		
+		<div data-role="page" id="page4" data-title="네번째 페이지">
+			<div data-role="header" data-add-back-btn="true">
+				<h1>게임</h1>
+				<a href="#page5" data-icon="home" class="ui-btn-right">노래</a>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li data-role="list-divider">게임 소개
+						 <p class="ui-li-aside">대중적인 게임</p>
+					</li>	
+					<li>
+						<div data-role="collapsible">
+						<h3>리그오브레전드 소개</h3>
+						<p>현재 e-spoerts 를 대표하는 게임으로</p>
+						<p>최근 MSI대회로 활발히 이루어지고 있습니다.</p>
+						<a href="https://namu.wiki/w/%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C">리그오브레전드 소개</a>
+						</div>
+						
+						<div data-role="collapsible">
+						<h3>대회 영상</h3>
+						<a href="https://www.youtube.com/watch?v=Kdl4Od1q5v0">MSI 대회 영상</a>
+						</div>							
+					</li>			
+				</ul>		
+			</div>
+			<div data-role="footer" class="ui-bar" data-position="fixed">
+				<div data-role="controlgroup" data-type="horizontal">
+				<a href="#page1">메인</a>
+				<a href="#page2">영화</a>
+				<a href="#page3">스포츠</a>
+				<a href="#page4">게임</a>
+				<a href="#page5">노래</a>
+				<a href="MyIntroduce2.html">만든이 이력서</a>					
+				</div>
 			</div>
 		</div>
 		
-		<div data-role="page" id="page4" data-title="네번째 페이지">
-		<div data-role="header" data-add-back-btn="true">
-			<h1>게임</h1>
-			<a href="#page1" data-icon="home" class="ui-btn-right">홈</a>
-		</div>
-		<div data-role="content">
-			<ul data-role="listview">
-				<li data-role="list-divider">탁구
-					 <p class="ui-li-aside">2009</p>
-				</li>	
-				<li>
-					<a href="#">
-						<img class="ui-li-icon" src="listicon2.png">
-						<h3>6PM</h3>		
-						<span class="ui-li-aside">생일파티</span>
-						<span class="ui-li-count">10</span>
-					</a>					
-				</li>
-				<li>
-					<a href="#">
-						<img class="ui-li-icon" src="listicon2.png">
-						<h3>6PM</h3>		
-						<span class="ui-li-count">10</span>
-					</a>					
-				</li>				
-			</ul>		
-		</div>
-		<div data-role="footer" class="ui-bar" data-position="fixed">
-			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#page1">영화</a>
-				<a href="#page2">스포츠</a>
-				<a href="#page3">게임</a>						
+		<div data-role="page" id="page5" data-title="네번째 페이지">
+			<div data-role="header" data-add-back-btn="true">
+				<h1>노래</h1>
+				<a href="#page1" data-icon="home" class="ui-btn-right">홈</a>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li data-role="list-divider">노래 소개
+						 <p class="ui-li-aside">여러가지 음악</p>
+					</li>	
+					<li>
+						<div data-role="collapsible">
+						<h3>몽환적인 노래 소개</h3>
+						<p>2006년에 발매한 곡</p>
+						<p>작곡가 : 키네틱 플로우(feat.이루마)</p>
+						<a href="https://www.youtube.com/watch?v=qp8gfkhG2SU">몽환의 숲</a>
+						</div>
+						
+						<div data-role="collapsible">
+						<h3>신나는 음악 소개</h3>
+						<p>인디게임 음악(게임 음악)</p>
+						<p>작곡가 : xi</p>
+						<a href="https://www.youtube.com/watch?v=5MmdoqBWZDM">노래 영상(게임 영상)</a>
+						</div>							
+					</li>			
+				</ul>		
+			</div>
+			<div data-role="footer" class="ui-bar" data-position="fixed">
+				<div data-role="controlgroup" data-type="horizontal">
+				<a href="#page1">메인</a>
+				<a href="#page2">영화</a>
+				<a href="#page3">스포츠</a>
+				<a href="#page4">게임</a>
+				<a href="#page5">노래</a>
+				<a href="MyIntroduce2.html">만든이 이력서</a>					
+				</div>
 			</div>
 		</div>
-	</div>			
+		
 </body>
 </html>
