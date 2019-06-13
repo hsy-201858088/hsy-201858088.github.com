@@ -7,12 +7,25 @@
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script>
+	$(document).ready( function() {  									
+		$('#toggle').click(function() {
+				$('input[name="text1"]').toggle(700);
+		});
+		$('#fadeToggle').click(function() {
+				$('#search.png').fadeToggle(1000);
+		});					
+	});
+</script>
 </head>
 <body>
 	<div data-role="page" id="page1" data-title="첫번째 페이지">
 		<div data-role="header" data-theme="a" style="background: white; color:blue; shadow: blue 0px 0px">
 			<a href="#page2" class="ui-btn-right">영화</a>
-			<h1>한동연</h1>
+			<button id="toggle"> 인삿말 </button>
+			<button id="fadeToggle"> fadeToggle </button>
+			<div><input type="text" name="text1" value="한동연의 페이지에 오신걸 환영합니다!!!"/></div>
+			<h1>한동연의 페이지</h1>
 		</div>
 		<div data-role="content">
 			<ul data-role="listview" data-inset="true">
@@ -30,7 +43,7 @@
 			<a href="#page3">스포츠</a>
 			<a href="#page4">게임</a>
 			<a href="#page5">노래</a>
-			<a href="MyIntroduce2.html">만든이 이력서</a>				
+			<a href="./MyIntroduce.html" target="blank">만든이 이력서</a>				
 		</div>
 	</div>
 	
@@ -92,7 +105,7 @@
 			<a href="#page3">스포츠</a>
 			<a href="#page4">게임</a>
 			<a href="#page5">노래</a>
-			<a href="MyIntroduce2.html">만든이 이력서</a>				
+			<a href="MyIntroduce.html" target="blank">만든이 이력서</a>				
 			</div>	
 		</div>
 	</div>
@@ -128,7 +141,7 @@
 			<a href="#page3">스포츠</a>
 			<a href="#page4">게임</a>
 			<a href="#page5">노래</a>
-			<a href="MyIntroduce2.html">만든이 이력서</a>						
+			<a href="MyIntroduce.html" target="blank">만든이 이력서</a>						
 			</div>
 		</div>
 	</div>
@@ -165,7 +178,7 @@
 				<a href="#page3">스포츠</a>
 				<a href="#page4">게임</a>
 				<a href="#page5">노래</a>
-				<a href="MyIntroduce2.html">만든이 이력서</a>					
+				<a href="MyIntroduce.html" target="blank">만든이 이력서</a>					
 				</div>
 			</div>
 		</div>
@@ -204,10 +217,9 @@
 				<a href="#page3">스포츠</a>
 				<a href="#page4">게임</a>
 				<a href="#page5">노래</a>
-				<a href="MyIntroduce2.html">만든이 이력서</a>					
+				<a href="MyIntroduce.html" target="blank">만든이 이력서</a>					
 				</div>
 			</div>
 		</div>
-		
 </body>
 </html>
